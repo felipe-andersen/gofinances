@@ -1,8 +1,18 @@
 
 
 import React from 'react';
-import { HashtagBar } from './styles';
+import { BarContainer, TagsContainer, TagsText } from './styles';
+//importando elementos criados e estilizados com a biblioteca styled-components
 
-export default function (){
-return <HashtagBar />
+
+export default function HashtagsBars(){
+return (
+<BarContainer>
+<TagsContainer><TagsText>Construção</TagsText></TagsContainer>
+<TagsContainer><TagsText>Construção</TagsText></TagsContainer>
+<TagsContainer><TagsText>Construção</TagsText></TagsContainer>
+<TagsContainer><TagsText>Construção</TagsText></TagsContainer>
+</BarContainer>
+    
+    )
 };

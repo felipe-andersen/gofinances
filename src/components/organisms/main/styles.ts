@@ -1,5 +1,5 @@
 
-import React from 'react';
+import {} from 'react-native';
 import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
@@ -17,6 +17,12 @@ margin-top: ${RFValue(55)}px;
 
 
 `;
+
+export const TextInputIt = styled.TextInput`
+width: 100px;
+height: 80px;
+background-color: rgba(255,255,255,1);
+`;
 /*
 
 Container quero com display grid do tipo mansory
@@ -32,7 +38,11 @@ o display ter a propriedade flex-direction recebendo row (da direita para a esqu
 */
 
 
-
+export const ButtonSubmit = styled(BorderlessButton)`
+width: ${RFValue(200)}px;
+height: ${RFValue(36)}px;
+background-color: red;
+`;
 
 
 export const TextPost = styled.Text``;

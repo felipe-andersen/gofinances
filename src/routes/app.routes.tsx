@@ -4,6 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import  Feed  from '../screens/feed';
+import { ViewLogin } from '../screens/login/styles';
+import ScreenLogin from '../screens/login';
 
 const { Navigator, Screen } =  createBottomTabNavigator();
 
@@ -16,6 +18,10 @@ export function AppRouter(){
             <Screen 
             name="Dashboard"
             component={Dashboard}/>
+
+            <Screen 
+            name="Login"
+            component={ScreenLogin}/>
                   
         </Navigator>
     )

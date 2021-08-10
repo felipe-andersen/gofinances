@@ -1,4 +1,4 @@
-import React, {} from "react";
+import React from "react";
 
 import HashtagBar from '../../components/organisms/hashtagsBar';
 import Main from "../../components/organisms/main";

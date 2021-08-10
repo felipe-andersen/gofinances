@@ -18,11 +18,12 @@ import {AppRouter} from './src/routes/app.routes';
 
 
 export default function App() {
+  /*
   const [fontsLoader] = useFonts({Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold});
 
   if (!fontsLoader){
     return <AppLoading/>
-  }
+  }*/
   return (
    <ThemeProvider theme={theme}>
      <NavigationContainer><AppRouter/></NavigationContainer> 

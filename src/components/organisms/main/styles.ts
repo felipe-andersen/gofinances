@@ -1,28 +1,24 @@
-
+import React from 'react';
 import {} from 'react-native';
 import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 
-export const Container = styled.View`
+export const ContainerView = styled.View`
 flex: 1;
 flex-direction: row;
 
-background-color: whitesmoke;
+background-color: rgba(220,220,220,0.5);
 
 justify-content:space-evenly;
 position: relative;
-margin-top: ${RFValue(55)}px;
+
 
 
 `;
 
-export const TextInputIt = styled.TextInput`
-width: 100px;
-height: 80px;
-background-color: rgba(255,255,255,1);
-`;
+
 /*
 
 Container quero com display grid do tipo mansory
@@ -39,9 +35,7 @@ o display ter a propriedade flex-direction recebendo row (da direita para a esqu
 
 
 export const ButtonSubmit = styled(BorderlessButton)`
-width: ${RFValue(200)}px;
-height: ${RFValue(36)}px;
-background-color: red;
+
 `;
 
 
@@ -54,7 +48,7 @@ export const PostContainer = styled(RectButton)`
 width: ${RFPercentage(26)}px;
 height: ${RFPercentage(67)}px;
 background-color: rgba(255,255,255,1);
-border-radius: ${RFPercentage(0.5)}px;
+border-radius:5px;
 
 `;
 
@@ -83,7 +77,7 @@ align-items: center;
 margin: 6px 0 0 8px;
 `;
 
-export const ProfilePic = styled.View`
+export const ProfileImg = styled.View`
 width: ${RFValue(36)}px;
 height: ${RFValue(36)}px;
 border-radius:${RFValue(18)}px;
@@ -92,7 +86,7 @@ justify-content: center;
 align-items: center;
 `;
 
-export const UserName = styled.Text`
+export const Name = styled.Text`
 font-size: ${RFValue(13)}px;
 margin-left: 8px;
 `;

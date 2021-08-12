@@ -1,58 +1,112 @@
 import React from 'react';
+import { useState } from 'react';
+import {FlatList} from "react-native";
 
 
 
 
 
-import {
-    Container, 
+import{
     PostContainer, 
     PostaddContainer, 
-   
     ContainerUser,
-    ProfilePic,
-    UserName, 
+    ProfileImg,
+    Name, 
     ContainerPostText,
     PostText,
     ImgPost,
-    TextInputIt} from './styles';
+    ContainerView
+   } from './styles';
 
+interface MainProps {
+descripText: string
+}
 
+export function Main (){
 
+const postQ = [
+    {
+    key: 'username_title_data_fdgfsfg',
+    name: 'Felipe',
+    cover: "",
+    descripText:"fdgfsdfg",
+    date: "dia 13",
+    username: "felipe-pazam",
+    },
+    {
+    key: 'username_title_data_fdfedfd',
+    name: 'Rodrigo',
+    cover: "",
+    descripText:"fdfedfd",
+    date: "dia 13",
+    username: "rodrigo-abravanel",
+    }
+];
 
-
-    
-
-
-
-
-export default function Main (){
+function Post(){
 return (
+    <PostContainer>
+        <ImgPost></ImgPost>
+        <ContainerPostText>
+            <PostText>felipe</PostText>
+        </ContainerPostText>
+        <ContainerUser>
+            <ProfileImg></ProfileImg>
+            <Name>Felipe</Name>
+        </ContainerUser>
+    </PostContainer>
+)
+};
+
+return (
+<ContainerView>
+<FlatList 
+data={postQ}
+renderItem={({item})=> {
+    return (
+    <Post/>)}}
+/>
+    <PostaddContainer></PostaddContainer>
+</ContainerView>
+)};
 
 
-<Container>
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
-     
-     <PostContainer>
-        <ImgPost></ImgPost>
-        <ContainerPostText><PostText></PostText></ContainerPostText>
-        <ContainerUser><ProfilePic></ProfilePic><UserName></UserName></ContainerUser>
-    </PostContainer>
-  
 
-     <PostaddContainer> </PostaddContainer>
-</Container>
- 
 
- 
-)
 
-};
-//exportando a função construtora do meu componente 
 
 
 

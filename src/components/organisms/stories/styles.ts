@@ -4,15 +4,18 @@ import {} from 'react-native';
 import {RFPercentage, RFValue} from 'react-native-responsive-fontsize'
 
 
-
+export const ViewStories = styled.View`
+height: ${RFPercentage(18)}px;
+width:100%;
+margin: ${RFValue(55)}px 0 0 0;
+`;
 
 export const ScrollViewBar = styled.ScrollView.attrs({  
 horizontal: true,
 showsHorizontalScrollIndicator: true,
-contentContainerStyle: { alignItems: 'center'}
+contentContainerStyle: { alignItems: 'flex-start'}
 })`
-height: ${RFPercentage(10)}px;
-width:100%;
+padding:  ${RFValue(11)}px 0 0 0;
 flex-direction: row;
     
     

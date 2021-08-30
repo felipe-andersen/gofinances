@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { BarContainer, TagsContainer, TagsText, ContainerView } from './styles';
+import { BarContainer, TagsContainer, TagsText } from './styles';
 //importando elementos criados e estilizados com a biblioteca styled-components
 
 

@@ -1,4 +1,9 @@
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+//Screens 
+
 import {
 ViewLogin,
 Img, 
@@ -13,11 +18,16 @@ FacebookText,
 ApleText,
 GoogleText,
 InputKeyword}  from './styles';
-import { TextInput } from 'react-native';
+import {View, TextInput, Button } from 'react-native';
 
 
 
-export default function ScreenLogin(){
+
+
+export default function ScreenLogin({navigation}){
+
+
+
 return (
  <ViewLogin>
      <Img/>
@@ -29,7 +39,12 @@ return (
      <BtnSocialAuthGoogle><GoogleText>Continuar com o Google</GoogleText></BtnSocialAuthGoogle>
      <BtnSocialAuthAple><ApleText>Continuar com a aple</ApleText></BtnSocialAuthAple>
      <Terms>Ao entrar você com concorda com os Termos de serviço e Politica de Privacidade da Wehome.</Terms>
+     <View>
+     <Button
+        title="Feed"
+        onPress={() => navigation.navigate('Feed')}></Button>
+     </View>
  </ViewLogin>
 )
-}
+};
 

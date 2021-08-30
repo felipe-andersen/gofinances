@@ -49,6 +49,7 @@ width: ${RFPercentage(26)}px;
 height: ${RFPercentage(67)}px;
 background-color: rgba(255,255,255,1);
 border-radius:5px;
+margin: 0 0 ${RFValue(5)}px 0;
 
 `;
 

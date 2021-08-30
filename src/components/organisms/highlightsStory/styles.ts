@@ -4,13 +4,13 @@ import {} from 'react-native';
 import {RFPercentage, RFValue} from 'react-native-responsive-fontsize'
 
 
-export const ViewStories = styled.View`
-height: ${RFPercentage(18)}px;
+export const ViewStoryHighlights = styled.View`
+height: ${RFPercentage(15)}px;
 width:100%;
 margin: ${RFValue(55)}px 0 0 0;
 `;
 
-export const ScrollViewBar = styled.ScrollView.attrs({  
+export const  ScrollViewBarStory = styled.ScrollView.attrs({  
 horizontal: true,
 showsHorizontalScrollIndicator: true,
 contentContainerStyle: { alignItems: 'flex-start'}
@@ -24,18 +24,23 @@ background-color: whitesmoke;
     
 `;
 
+export const  ProfileCtnrStory = styled.View`
+align-items:center;`;
 
-export const ContainerPic = styled.View`
+export const ProfileName = styled.Text``;
+
+
+export const ImgCtnrStory = styled.View`
 justify-content:center;
 align-items:center;
 width: ${RFValue(60)}px;
 height: ${RFValue(60)}px;
 
 overflow:hidden;
-margin: 0 0 0 15px
+margin: 0 7px 3px 7px;
 `;
 
-export const Cover = styled.View`
+export const StoryCover = styled.View`
 width: ${RFValue(60)}px;
 height: ${RFValue(60)}px;
 background-color: rgba(255,155,152,1);

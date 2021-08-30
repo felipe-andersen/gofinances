@@ -2,10 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import {FlatList} from "react-native";
 
-
-
-
-
 import{
     PostContainer, 
     PostaddContainer, 

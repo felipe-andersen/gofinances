@@ -1,40 +1,30 @@
 import React from 'react';
-import { Dashboard } from '../screens/dashboard';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View, Text } from 'react-native';
 
+
+import { Dashboard } from '../screens/dashboard';
 import  Feed  from '../screens/feed';
 import { ViewLogin } from '../screens/login/styles';
 import ScreenLogin from '../screens/login';
+import { Temp } from '../screens/temp';
 
-const { Navigator, Screen } =  createBottomTabNavigator();
+// const { Navigator, Screen } =  createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
 export function AppRouter(){
-    return (
-        <Navigator>
-             <Screen 
-            name="Feed"
-            component={Feed}/>
-            <Screen 
-            name="Dashboard"
-            component={Dashboard}/>
-
-            <Screen 
-            name="Login"
-            component={ScreenLogin}/>
-                  
-        </Navigator>
-    )
-}
-
-/*
-const Stack = createNativeStackNavigator()
-export function StackNavigation (){
 return (
-  <Stack.Navigator>
-    <Stack.Screen name="some thing" component={Feed}></Stack.Screen>
+  <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="Login" component={ScreenLogin} />
+    </Stack.Navigator>
+    
+    <Stack.Navigator>
+      <Stack.Screen name="Feed" component={Feed} />
+    </Stack.Navigator>
+  </NavigationContainer> 
+        
+  
+)};
 
-  </Stack.Navigator>
-)
-}
-*/

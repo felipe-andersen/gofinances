@@ -1,7 +1,10 @@
 import React from 'react';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
+
+
 import styled from 'styled-components/native';
+
 
 export const ViewLogin = styled.View`
 flex:1;
@@ -41,6 +44,11 @@ align-items: center;
 margin: 8px 0 0 0;
 border-radius:5px;
 `;
+
+
+
+
+
 
 export const LogIn = styled.Text``;
 

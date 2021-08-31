@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer} from '@react-navigation/native';
+import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 //Screens 
 
@@ -19,12 +19,15 @@ ApleText,
 GoogleText,
 InputKeyword}  from './styles';
 import {View, TextInput, Button } from 'react-native';
+import { AppRouter } from '../../routes/app.routes';
+import Feed from '../feed';
 
 
 
 
 
-export default function ScreenLogin({navigation}){
+
+export default function ScreenLogin({navigation}) {
 
 
 

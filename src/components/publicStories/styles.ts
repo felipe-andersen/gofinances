@@ -3,13 +3,13 @@ import styled from "styled-components/native";
 import {RFValue, RFPercentage} from 'react-native-responsive-fontsize';
 
 
-export const ViewStories = styled.View`
+export const ViewPublicStories = styled.View`
 height: ${RFPercentage(15)}px;
 width:100%;
 margin: ${RFValue(55)}px 0 0 0;
 `;
 
-export const StoriesScrollViewBar = styled.ScrollView.attrs({  
+export const  PublicStoriesScrollView = styled.ScrollView.attrs({  
 horizontal: true,
 showsHorizontalScrollIndicator: true,
 contentContainerStyle: { alignItems: 'flex-start'}
@@ -19,10 +19,10 @@ flex-direction: row;
 background-color: whitesmoke;
 `;
 
-export const ProfileCtnr = styled.View`
+export const  CntrTextImage = styled.View`
 align-items:center;`;
 
-export const NameAuthor = styled.Text``;
+export const NameProfile = styled.Text``;
 
 
 export const ContainerImg = styled.View`

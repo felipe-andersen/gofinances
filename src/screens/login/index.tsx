@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer, useNavigation, useRoute} from '@react-navigation/native';
 import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 //Screens 
@@ -27,8 +27,14 @@ import Feed from '../feed';
 
 
 
-export default function ScreenLogin({navigation}) {
+export default function ScreenLogin() {
 
+
+    const  navigation  = useNavigation()
+function handleNavigateToFeedScreen() {
+
+    navigation.navigate(Feed); 
+  }
 
 
 return (
@@ -45,9 +51,10 @@ return (
      <View>
      <Button
         title="Feed"
-        onPress={() => navigation.navigate('Feed')}></Button>
+        onPress={handleNavigateToFeedScreen}></Button>
      </View>
  </ViewLogin>
 )
 };
+
 

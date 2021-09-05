@@ -9,7 +9,7 @@ import {useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold} fr
 import AppLoading from 'expo-app-loading';
 
 
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, NavigationContext} from '@react-navigation/native';
 import {AppRouter} from './src/routes/app.routes';
 
 
@@ -29,7 +29,7 @@ if (!fontsLoader){
     <AppRouter/>
   </ThemeProvider>
   )
-}
+};
 
 
 // Baixar os types da lib styled-components como dependencia de desenvolvimento

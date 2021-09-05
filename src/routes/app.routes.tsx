@@ -2,6 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { View, Text } from 'react-native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // Screens
 import { Dashboard } from '../screens/dashboard';
@@ -10,16 +12,17 @@ import { ViewLogin } from '../screens/login/styles';
 import ScreenLogin from '../screens/login';
 
 
+const Tab = createBottomTabNavigator();
 
-const Stack = createNativeStackNavigator();
 
 export function AppRouter(){
 return (
+  
   <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Login" component={ScreenLogin} />]
-      <Stack.Screen name="Feed" component={Feed} />
-    </Stack.Navigator>
+    <Tab.Navigator>
+      <Tab.Screen name="Login" component={ScreenLogin}/>
+      <Tab.Screen name="Feed" component={Feed}/>
+    </Tab.Navigator>
   </NavigationContainer> 
 )};
 

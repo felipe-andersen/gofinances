@@ -6,7 +6,6 @@ import {
     StoryCover, 
     ViewStoryHighlights,
     ProfileCtnrStory,
-    ProfileName
 } from './styles';
 
  
@@ -19,13 +18,16 @@ import {
 
 
 
-export function StoriesHighlights(){
-return (
-   <ViewStoryHighlights>
-   < ScrollViewBarStory>
-       < ProfileCtnrStory><ImgCtnrStory><StoryCover/></ImgCtnrStory><ProfileName>Felipe</ProfileName></ProfileCtnrStory>
-      
-       
-   </ ScrollViewBarStory></ViewStoryHighlights>
-)
+export class StoriesHighlights extends React.Component {
+  render() {
+    return (
+      <ViewStoryHighlights>
+        <ScrollViewBarStory>
+          <ProfileCtnrStory>
+            <ImgCtnrStory><StoryCover/></ImgCtnrStory>
+          </ProfileCtnrStory>
+        </ScrollViewBarStory>
+      </ViewStoryHighlights>
+    )
+  }
 };

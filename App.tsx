@@ -10,7 +10,7 @@ import AppLoading from 'expo-app-loading';
 
 
 import {NavigationContainer, NavigationContext} from '@react-navigation/native';
-import {AppRouter} from './src/routes/app.routes';
+import AppRouter from './src/routes/index';
 
 
 

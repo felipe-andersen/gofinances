@@ -1,6 +1,6 @@
 import React from 'react';
 import { HighlightCard } from '../../components/organisms/HighlightCard/index';
-
+import { getHeaderTitle } from '@react-navigation/elements';
 
 import {
   Container,

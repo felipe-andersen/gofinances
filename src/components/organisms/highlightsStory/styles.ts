@@ -5,7 +5,7 @@ import {RFPercentage, RFValue} from 'react-native-responsive-fontsize'
 
 
 export const ViewStoryHighlights = styled.View`
-height: ${RFPercentage(15)}px;
+height: ${RFPercentage(28)}px;
 width:100%;
 margin: ${RFValue(55)}px 0 0 0;
 `;
@@ -27,23 +27,22 @@ background-color: whitesmoke;
 export const  ProfileCtnrStory = styled.View`
 align-items:center;`;
 
-export const ProfileName = styled.Text``;
 
 
 export const ImgCtnrStory = styled.View`
-justify-content:center;
+justify-content:flex-end;
 align-items:center;
-width: ${RFValue(60)}px;
-height: ${RFValue(60)}px;
-
-overflow:hidden;
+width: ${RFValue(90)}px;
+height: ${RFValue(140)}px;
+background-color: rgba(0,0,0, 0.7);
 margin: 0 7px 3px 7px;
 `;
 
 export const StoryCover = styled.View`
-width: ${RFValue(60)}px;
-height: ${RFValue(60)}px;
+width: ${RFValue(45)}px;
+height: ${RFValue(45)}px;
 background-color: rgba(255,155,152,1);
 border-radius: ${RFValue(30)}px;
+border: 2px solid white;
 
 `;

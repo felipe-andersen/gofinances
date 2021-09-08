@@ -19,10 +19,12 @@ align-items: center;
 justify-content: center;
 `;
 
-export const Img = styled.View`
+export const ContainerErrorAlert = styled.View`
 width: ${RFPercentage(49)}px;
-height: ${RFPercentage(15)}px;
-background-color: rgba(250,250,250,1);`;   
+height: ${RFPercentage(10)}px;
+background-color: rgba(204, 0, 0,1);
+margin: 0 0 8px 0;
+`;   
 
 export const SVGLogo = styled.View``;
 
@@ -31,22 +33,32 @@ font-size: ${RFValue(20)}px;
 margin: 15px 0 15px 0;
 `;
 
+export const GContainerErrorAlert = styled.View`
+width: ${RFPercentage(49)}px;
+height: ${RFPercentage(10)}px;
+background-color: rgba(204, 0, 0,1);
+position: absolute;
+`;
+
 
 export const InputEmail = styled.TextInput`
 width: ${RFPercentage(49)}px;
 height: ${RFPercentage(6)}px;
-background-color: rgba(219, 219, 219,0.7);
+background-color: rgba(255, 255, 255,0.1);
 border-radius:5px;
+border: 1px solid rgba(43,160,255,1);
+box-shadow: 2px 1px 3px blue;
 `;
 
 export const InputKeyword = styled.TextInput`
 width: ${RFPercentage(49)}px;
 height: ${RFPercentage(6)}px;
-background-color: rgba(219, 219, 219,0.7);
+background-color: rgba(255, 255, 255,0.1);
 justify-content: center;
 align-items: center;
 margin: 8px 0 0 0;
 border-radius:5px;
+border: 1px solid red;
 `;
 
 
@@ -55,21 +67,30 @@ title: string;
 }
 
 export const LoginBtn = styled(RectButton)`
-width: ${RFPercentage(49)}px;
+width: ${RFPercentage(20)}px;
 height: ${RFPercentage(6)}px;
-background-color: rgba(63,133,244,1);
+background-color: rgba(43,160,255,1);
 font-size: ${RFValue(20)}px;
-justify-content: center;
 align-items: center;
-margin: 9px 0 20px 0;
+
 border-radius:5px;
 `;
 
-export const ForgotContainer = styled.View`
+export const ContainerForgotLogin = styled.View`
 width: ${RFPercentage(49)}px;
 height: ${RFPercentage(4)}px;
-align-items: flex-end;
+flex-direction:row;
+justify-content: space-between;
+align-items: center;
+margin: 15px;
+`;
+
+export const ForgotContainer = styled.View`
+
+height: ${RFPercentage(4)}px;
+
 justify-content: center;
+margin: 0 0 0 10px;
 `;
 
 
@@ -77,6 +98,13 @@ export const Forgot = styled.Text`
 color: rgba(26, 115, 232, 1);
 `;
 
+
+export const Line = styled.View`
+width: ${RFPercentage(49)}px;
+height: ${RFValue(2)}px;
+background-color: rgba(210,210,210,1);
+margin:8px 0 8px 0;
+`;
 
 export const BtnSocialAuthFacebook = styled(RectButton)`
 width: ${RFPercentage(49)}px;

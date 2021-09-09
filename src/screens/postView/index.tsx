@@ -1,6 +1,8 @@
 import React from "react";
 import { ScreenContainer } from "react-native-screens";
 import { Text, View, FlatList } from "react-native";
+import { FontAwesome } from '@expo/vector-icons'; 
+import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import { 
   ViewPostImages,
   ViewPostInteractionInformation,
@@ -21,49 +23,36 @@ import {
 } from './styles';
 import { Fragment } from "hoist-non-react-statics/node_modules/@types/react";
 
-/*
-const PostUn = [
-  { key: "gkfdg",
-    name: "Felipe",
-  age: 23 },
-  { key: "gkfsdfdg",
-    mather: 24,
-   father: 24}
-];
 
-<FlatList 
-        data={PostUn}
-        renderItem={({item})=> {
-          return (
-            <PostViewComponent/>
-          )
-        }}
-      />
-*/
+
 export default class PostViewScreen extends React.Component {
   render() {
     return (
       <FragmentScreen>
         <ScrollViewPostScreen>
+          <FragmentScreen>
             <ViewPostImages>
               <PostImages></PostImages>
             </ViewPostImages>
-            <ViewPostInteractionInformation>
-              <ReactionsText>1048 reações</ReactionsText>
+            <ViewPostInteractionInformation
+              onPress={() => {}}
+            >
+              <ReactionsText>1 mil reações</ReactionsText>
               <CommentsSharesText>734 comentários &bull; 119 compartilhamentos</CommentsSharesText>
             </ViewPostInteractionInformation>
             <FollowButton></FollowButton>
             <ViewPostTitle>
-              <TextPostTitle></TextPostTitle>
+              <TextPostTitle>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aspernatur deserunt reprehenderit impedit.</TextPostTitle>
             </ViewPostTitle>
             <ViewPostDescription>
-              <TextPostDescription></TextPostDescription>
+              <TextPostDescription>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error placeat iste nihil eos quam quaerat molestiae, consequatur, aliquid accusamus sint delectus aut nam eius saepe alias nobis, perferendis officia distinctio.</TextPostDescription>
             </ViewPostDescription>
             <ViewPostButtons>
-              <CommentsButton onPress={() => {}}><Text>Comp.</Text></CommentsButton>
-              <ReactButton onPress={() => {}}><Text>React</Text></ReactButton>
-              <ShareButton onPress={() => {}}><Text>Share</Text></ShareButton>
+              <ReactButton onPress={() => {}}><MaterialCommunityIcons name="emoticon-tongue" size={24} color="grey" /></ReactButton>
+              <CommentsButton  onPress={() => {}}><Text>Comments</Text></CommentsButton>
+              <ShareButton onPress={() => {}}><FontAwesome name="share-alt" size={24} color="grey"/></ShareButton>
             </ViewPostButtons>  
+          </FragmentScreen>
         </ScrollViewPostScreen>
       </FragmentScreen>
     )

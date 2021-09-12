@@ -46,6 +46,26 @@ margin: ${RFValue(2)}px 0 ${RFValue(7)}px 0;
 border: 1px solid grey;
 `;
 
+export const NameCoverFollowersView = styled.View`
+
+`;
+
+export const CoverView = styled.View`
+
+`;
+
+export const ThisNameText = styled.View`
+
+`;
+
+export const NameFollowersView = styled.Text`
+
+`;
+
+export const FollowersText = styled.Text`
+
+`;
+
 export const CommentsSharesText = styled.Text`
 font-size: ${RFValue(11)}px;
 color: grey;

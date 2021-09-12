@@ -38,61 +38,88 @@ import {
 } from './styles';
 
 export default class ProfileViewScreen extends React.Component {
+
+
+
   render() {
     return (
       <ProfileScreenView>
         <ScrollViewProfileScreen>
           <InitialView>
-            <BackgroundCollorImageContainer>
-            </BackgroundCollorImageContainer>
+            <BackgroundCollorImageContainer></BackgroundCollorImageContainer>
             <CoverContainer></CoverContainer>
             <NameText>Felipe Arouxa Coutinho de Sousa</NameText>
             <DescriptionText>Lorem ipsum dolor sit amet consectetur adipisicing elit.</DescriptionText>
-            <InteractionsText>2,5 interações nos útiltimos 30 d</InteractionsText>
+            <InteractionsText>2,5 mil interações nos útiltimos 30 d</InteractionsText>
+
             <ProfileBtnsContainer>
-              <FollowButton><FollowText>Seguindo</FollowText></FollowButton>
-              <SendMessageButton><SendMessageText>Mensagem</SendMessageText></SendMessageButton>
+              <FollowButton
+                onPress={() => {}}
+              >
+                <FollowText>Seguindo</FollowText>
+              </FollowButton>
+
+              <SendMessageButton
+                 onPress={() => {}}
+              >
+                <SendMessageText>Mensagem</SendMessageText>
+                </SendMessageButton>
               </ProfileBtnsContainer>
+
           </InitialView>
           <ContactsDataContainer>
 
-            <OccupationAndInstitutionContainer>
-              <OccupationAndInstitutionText>OCUPAÇÃO na empresa INSTITUIÇÃO</OccupationAndInstitutionText>
+            <OccupationAndInstitutionContainer
+              onPress={() => {}}
+            >
+              <OccupationAndInstitutionText>Desenvolvedor Front End na empresa Autônomo</OccupationAndInstitutionText>
             </OccupationAndInstitutionContainer>
             
-            <EducationalInstitutionContainer>
+            <EducationalInstitutionContainer
+              onPress={() => {}}
+            >
               <EducationalInstitutionText>Estudou ou estuda em INSTITUIÇÃO</EducationalInstitutionText>
             </EducationalInstitutionContainer>
 
-            <FollowersContainer>
+            <FollowersContainer
+              onPress={() => {}}
+            >
               <FollowersText>Seguido(a) por 3.454 pessoas</FollowersText>
             </FollowersContainer>
 
-            <JoinedContainer>
+            <JoinedContainer
+              onPress={() => {}}
+            >
               <JoinedText>Entrou em DATA</JoinedText>
             </JoinedContainer>
 
-            <EmailContainer>
+            <EmailContainer
+              onPress={() => {}}
+            >
               <EmailText>felipe.coutinho.psl@gmail.com</EmailText>
             </EmailContainer>
 
-            <SiteContainer>
+            <SiteContainer
+              onPress={() => {}}
+            >
               <SiteText>www.wehome.com.br</SiteText>
             </SiteContainer>
 
-            <LiveInContainer>
-              <LiveInText>Mora em LOCAL</LiveInText>
-            </LiveInContainer>
-
-            <LiveInContainer>
+            <LiveInContainer
+              onPress={() => {}}
+            >
               <LiveInText>Mora em LOCAL</LiveInText>
             </LiveInContainer>
             
-            <IsFromContainer>
+            <IsFromContainer
+              onPress={() => {}}
+            >
               <IsFromText>De LOCAL</IsFromText>
             </IsFromContainer>
 
-            <MoreContainer>
+            <MoreContainer
+              onPress={() => {}}
+            >
               <MoreText>Ver mais informações</MoreText>
             </MoreContainer>
          

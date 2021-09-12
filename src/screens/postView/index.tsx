@@ -6,6 +6,11 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { 
   ViewPostImages,
   ViewPostInteractionInformation,
+  NameCoverFollowersView,
+  CoverView,
+  ThisNameText,
+  NameFollowersView,
+  FollowersText,
   FollowButton,
   ViewPostTitle,
   ViewPostDescription,
@@ -22,7 +27,12 @@ import {
   FragmentScreen
 } from './styles';
 import { Fragment } from "hoist-non-react-statics/node_modules/@types/react";
+import { NameText } from "../profileView/styles";
 
+
+const valores = "felipe Coutinho";
+const result = valores.split(' ');
+console.log("HHJHJ");
 
 
 export default class PostViewScreen extends React.Component {
@@ -40,7 +50,16 @@ export default class PostViewScreen extends React.Component {
               <ReactionsText>1 mil reações</ReactionsText>
               <CommentsSharesText>734 comentários &bull; 119 compartilhamentos</CommentsSharesText>
             </ViewPostInteractionInformation>
-            <FollowButton></FollowButton>
+            <NameCoverFollowersView>
+              <CoverView></CoverView>
+                <NameFollowersView>
+                  <ThisNameText></ThisNameText>
+                  <FollowersText></FollowersText>
+                </NameFollowersView>
+              <FollowButton></FollowButton>
+            </NameCoverFollowersView>
+
+         
             <ViewPostTitle>
               <TextPostTitle>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus aspernatur deserunt reprehenderit impedit.</TextPostTitle>
             </ViewPostTitle>

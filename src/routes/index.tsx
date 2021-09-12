@@ -11,7 +11,7 @@ import TermsPolicyScreen  from '../screens/termsPolicy';
 import Feed from '../screens/feed';
 import PostViewScreen from'../screens/postView';
 import ProfileViewScreen from '../screens/profileView';
-
+import LearningScreen from '../screens/learning';
 
 
 const BottomTab = createBottomTabNavigator();
@@ -21,9 +21,9 @@ export default class AppRoutes extends React.Component {
     return (
       <NavigationContainer>
         <BottomTab.Navigator>
+          <BottomTab.Screen name="Learning" component={LearningScreen}/>
           <BottomTab.Screen name="Profile" component={ProfileViewScreen}/>
-          <BottomTab.Screen name="Tela de autenticação" component={ScreenLogin}/>
-          <BottomTab.Screen name="Termos e Política de Privacidade" component={Feed}/>
+          <BottomTab.Screen name="Feed" component={Feed}/>
           <BottomTab.Screen name="Post" component={PostViewScreen}/>
           </BottomTab.Navigator>
       </NavigationContainer>

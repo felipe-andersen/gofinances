@@ -20,11 +20,28 @@ export const LearningScreenScrollView = styled.ScrollView`
 export const ArchitecturalStyleView = styled.View`
 width: 100%;
 background-color:  rgba(250,250,250,1);
-padding: ${RFValue(25)}px ${RFValue(15)}px ${RFValue(25)}px ${RFValue(15)}px;
+padding: ${RFValue(0)}px ${RFValue(0)}px ${RFValue(25)}px ${RFValue(0)}px;
 
 margin: 0 0 ${RFValue(8)}px 0;
 
 `;
+
+export const ArchitecturalStyleImage = styled.View`
+width: 100%;
+height: ${RFValue(160)}px;
+background-color:  orange;
+margin: 0 0 ${RFValue(15)}px 0;
+
+`;
+export const ArchitecturalStyleNameDescripContainer = styled.View`
+width: 100%;
+background-color:  rgba(250,250,250,1);
+padding: ${RFValue(0)}px ${RFValue(15)}px ${RFValue(25)}px ${RFValue(15)}px;
+flex-direction: column;
+
+`;
+
+
 
 export const ArchitecturalStyleName = styled.Text`
 font-size: ${RFValue(22)}px;
@@ -49,48 +66,74 @@ export const CoverNameDescriptionContainer = styled.View`
 flex-direction: row;
 
 align-items: center;
-margin: 0 0 ${RFValue(15)}px 0;
+
 `;
 
 export const TutorCover = styled.View`
-width: ${RFValue(100)}px;
-height: ${RFValue(100)}px;
+width: ${RFValue(50)}px;
+height: ${RFValue(50)}px;
 background-color: brown;
-border-radius: ${RFValue(50)}px;
-margin: 0;
+border-radius: ${RFValue(25)}px;
+
 
 `;
 
-export const NameDescriptionContainer = styled.Text`
+export const NameDescriptionContainer = styled.View`
 flex-direction: column;
-margin: 0 0 0 ${RFValue(15)}px ;
+margin: 0 0 0 ${RFValue(8)}px ;
 `;
+
+export const TutorFollowButton = styled.Text`
+font-size: ${RFValue(13)}px;
+color: grey;
+
+`;
+
+
 
 export const TutorName = styled.Text`
-font-size: ${RFValue(22)}px;
+font-size: ${RFValue(14)}px;
 font-weight: 700;
 color: black;
+
+margin: 0 ${RFValue(0)}px ${RFValue(5)}px ${RFValue(0)}px;
 `;
 
 export const  TutorDescriptionAndPrefession = styled.Text``;
 
 export const VideoScrollView = styled.View`
 width: 100%;
+margin: 0 0 ${RFValue(8)}px 0;
 
+`;
+
+
+export const VideoRectButtonBorder = styled.View`
+width: 100%;
+border: 1px solid gray;
 `;
 
 
 export const VideoView = styled(RectButton)`
 width: 100%;
-height: ${RFValue(350)}px;
+
 background-color:  rgba(250,250,250,1);
 flex-direction: row;
-padding: ${RFValue(8)}px;
-align-items: flex-start;
+
+
 padding: ${RFValue(25)}px ${RFValue(15)}px ${RFValue(25)}px ${RFValue(15)}px;
 
 
+
 `;
+
+export const VideoTitleDescripContainer = styled.View`
+width: 60%;
+margin: 0 ${RFValue(0)}px 0 ${RFValue(8)}px;
+
+`;
+
+
 
 export const VideoTitle = styled.Text`
 font-size: ${RFValue(15)}px;
@@ -100,13 +143,18 @@ color: black;
 
 
 export const CoverView = styled.View`
-width: ${RFValue(130)}px;
+width: 40%;
 height: ${RFValue(70)}px;
 background-color: yellow;
-margin: 0 0 ${RFValue(8)}px 0;
+
 `;
 
-export const VideoDescriptionText = styled.Text`
+
+export const TitleDescriptionView = styled.Text`
+
+`;
+
+export const VideoDescription = styled.Text`
 font-size: ${RFValue(15)}px;
 color: black;
 `;
@@ -114,14 +162,53 @@ color: black;
 
 export const SpreadOutView = styled.View`
 width: 100%;
+height: ${RFValue(35)}px;
 justify-content: center;
+background-color:  rgba(250,250,250,1);
+align-items: center;
+
 `;
 
 
 export const SpreadOutText = styled.Text`
-
+color: grey;
 `;
 
 export const SpreadOutIcon = styled.View`
 
 `;
+
+export const ArchitecturalElementsScrollView = styled.ScrollView.attrs({
+    horizontal: true,
+    showsHorizontalScrollIndicator: false,
+    contentContainerStyle: { alignItems: 'flex-start'}
+})`
+background-color:  rgba(250,250,250,1);
+padding: ${RFValue(25)}px ${RFValue(15)}px ${RFValue(25)}px ${RFValue(15)}px;
+`;
+
+export const ArchitecturalElementView = styled.View`
+background-color:  rgba(250,250,250,1);
+margin: ${RFValue(0)}px ${RFValue(20)}px ${RFValue(0)}px ${RFValue(0)}px;
+flex-direction: column;
+
+`;
+
+export const ArchitecturalElementImage = styled.View`
+width: ${RFValue(100)}px;
+height: ${RFValue(100)}px;
+border-radius: ${RFValue(50)}px;
+background-color: green;
+`;
+
+export const  ArchitecElemNameContainer = styled.View`
+align-items: center;
+`;
+
+export const ArchitecturalElementName = styled.Text`
+margin: ${RFValue(8)}px 0 0 0;
+`;
+
+
+
+

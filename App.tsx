@@ -11,7 +11,7 @@ import AppLoading from 'expo-app-loading';
 
 import {NavigationContainer, NavigationContext} from '@react-navigation/native';
 import AppRouter from './src/routes/index';
-
+import { AuthContext } from './utils/AuthContext';
 
 
 
@@ -25,6 +25,8 @@ if (!fontsLoader){
   return <AppLoading/>
 }
   return (
+
+    
   <ThemeProvider theme={theme}>
     <AppRouter/>
   </ThemeProvider>
@@ -34,3 +36,5 @@ if (!fontsLoader){
 
 // Baixar os types da lib styled-components como dependencia de desenvolvimento
 // BAsicamente dois tipos de navegação 
+
+

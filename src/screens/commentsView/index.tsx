@@ -25,16 +25,25 @@ import {
   
 } from './styles';
 
+
+
+
+interface CommentsViewScreenProps {
+  commentContent: string;
+  likeAcount: string;
+  name: string;
+};
+
 export default class CommentsViewScreen extends React.Component {
+  
   render() {
 
-    const { navigate } = useNavigation();
+  
 
     return (
       <React.Fragment>
 
         <CommentsView>
-           
           
           <AllCommentsScrollView>
             <ListOption/>
@@ -46,17 +55,18 @@ export default class CommentsViewScreen extends React.Component {
 
               <CommentContentBtnsView>
                 <CommentAuthorName
-                  onPress={() => {navigate("ProfileViewScreen", "")}}
+                  onPress={() => {}}
                 >
-                  <Text>Felipe Sousa</Text><Text>...</Text></CommentAuthorName>
+                  <Text>{name}</Text><Text>...</Text></CommentAuthorName>
                 <CommentContent
                   onPress={() => {}}
                 >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut earum praesentium perspiciatis accusantium, illum vitae modi similique reprehenderit autem sint facere? Totam tempore laudantium, dignissimos blanditiis molestias recusandae minus illum.</CommentContent>       
+                  {commentContent}
+                </CommentContent>
                 <CommentBtns>
                   <Text>4 h</Text>
                   <ResponseBtn><Text>Responder</Text></ResponseBtn>
-                  <UtilsBtn><Text>Curtir 25</Text></UtilsBtn>
+                  <UtilsBtn><Text>Curtir {likeAcount}</Text></UtilsBtn>
                 </CommentBtns>
 
                 <CommentImput/>
@@ -83,8 +93,8 @@ export default class CommentsViewScreen extends React.Component {
               </PhotoGifView>
               <SendCommentBtn>Send</SendCommentBtn>
             </AttachmentBtnsView>
-          </CommentImputViewFixed>
 
+          </CommentImputViewFixed>
 
           <AnimatedAlertAgainComment></AnimatedAlertAgainComment>
         </CommentsView>
@@ -94,7 +104,4 @@ export default class CommentsViewScreen extends React.Component {
   }
 };
 
-module.exports = "";
 
-
-namespace dfkfdkjfd {};

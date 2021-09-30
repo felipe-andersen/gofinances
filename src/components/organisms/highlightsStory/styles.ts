@@ -5,9 +5,9 @@ import {RFPercentage, RFValue} from 'react-native-responsive-fontsize'
 
 
 export const ViewStoryHighlights = styled.View`
-height: ${RFPercentage(28)}px;
+
 width:100%;
-margin: ${RFValue(55)}px 0 0 0;
+margin: ${RFValue(0)}px ${RFValue(0)}px ${RFValue(0)}px ${RFValue(0)}px;
 `;
 
 export const  ScrollViewBarStory = styled.ScrollView.attrs({  
@@ -29,20 +29,32 @@ align-items:center;`;
 
 
 
-export const ImgCtnrStory = styled.View`
+export const StoryContainer = styled.View`
 justify-content:flex-end;
 align-items:center;
-width: ${RFValue(90)}px;
-height: ${RFValue(140)}px;
+width: ${RFValue(110)}px;
+height: ${RFValue(235)}px;
 background-color: rgba(0,0,0, 0.7);
-margin: 0 7px 3px 7px;
+margin: ${RFValue(0)}px ${RFValue(0)}px ${RFValue(8)}px ${RFValue(8)}px;
 `;
 
-export const StoryCover = styled.View`
-width: ${RFValue(45)}px;
-height: ${RFValue(45)}px;
+export const PictureContainer = styled.View`
+width: ${RFValue(35)}px;
+height: ${RFValue(35)}px;
 background-color: rgba(255,155,152,1);
 border-radius: ${RFValue(30)}px;
 border: 2px solid white;
+margin: ${RFValue(0)}px ${RFValue(0)}px ${RFValue(3)}px ${RFValue(0)}px;
 
 `;
+
+export const Picture = styled.View``;
+
+
+export const NameText = styled.Text`
+
+color: white;
+margin: ${RFValue(0)}px ${RFValue(0)}px ${RFValue(8)}px ${RFValue(0)}px;
+font-size: ${RFValue(10)}px;
+`;
+

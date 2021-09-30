@@ -21,11 +21,25 @@ export default {
         regular: "Poppins_400Regular",
         medium: "Poppins_500Medium",
         bold: "Poppins_600SemiBold",
+        Thin100: "",
+        Thin100Italic: "",
+        Light300: "",
+        Light300Italic: "",
+        Regular400: "Poppins_400Regular",
+        Regular400Italic: "",
+        Medium500: "Poppins_500Medium",
+        Medium500Italic: "",
+        SemiBold600: "Poppins_600SemiBold",
+        SemiBold600Italic: "",
+        Bold700: "",
+        Bold700Italic: "",
+        Black900: "",
+        Black900Italic: "",
+
     }
 
     
   
-  }
+  };
 
   //cdn de fontes
- 

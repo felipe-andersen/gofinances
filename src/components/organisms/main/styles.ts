@@ -53,7 +53,7 @@ margin: 0 0 ${RFValue(5)}px 0;
 
 `;
 
-export const ImgPost = styled.View`
+export const ImgPost = styled.Image`
 width: ${RFPercentage(26)}px;
 height: ${RFPercentage(43)}px;
 background-color: rgba(200,130,255,1);

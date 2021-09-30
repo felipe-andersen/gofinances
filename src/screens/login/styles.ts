@@ -3,14 +3,11 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
 import { RectButtonProps } from 'react-native-gesture-handler';
+import theme from '../../global/styles/theme';
 
 export interface Props extends RectButtonProps {
-    title:string;
-}
-
-
-
-
+  title:string;
+};
 
 export const ViewLogin = styled.View`
 flex:1;
@@ -40,7 +37,6 @@ background-color: rgba(204, 0, 0,1);
 position: absolute;
 `;
 
-
 export const InputEmail = styled.TextInput`
 width: ${RFPercentage(49)}px;
 height: ${RFPercentage(6)}px;
@@ -60,7 +56,6 @@ margin: 8px 0 0 0;
 border-radius:5px;
 border: 1px solid red;
 `;
-
 
 export interface PropsLoginBtn {
 title: string;
@@ -93,11 +88,13 @@ justify-content: center;
 margin: 0 0 0 10px;
 `;
 
-
 export const Forgot = styled.Text`
 color: rgba(26, 115, 232, 1);
+font-family: ${({theme}) => theme.fonts.Regular400};
+font-stretch: normal;
+font-display: normal;
+font-kerning: normal;
 `;
-
 
 export const Line = styled.View`
 width: ${RFPercentage(49)}px;
@@ -116,8 +113,6 @@ align-items: center;
 margin: 8px 0 0 0;
 border-radius:5px;
 `;
-
-
 
 export const FacebookText = styled.Text`
 color: white;
@@ -157,11 +152,11 @@ color: white;
 `;
 
 export const SignUp = styled.View`
-font-size: ${RFValue(14)}px;
 margin: 15px 0 0 0;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+border-radius: ${RFValue(0)}px;
 `;
 
 export const SignUpText = styled.Text`
@@ -175,7 +170,6 @@ justify-content: center;
 align-items: center;
 
 `;
-
 
 export const ContainerTermsBts = styled.View`
 width: ${RFPercentage(49)}px;

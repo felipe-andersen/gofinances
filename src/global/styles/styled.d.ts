@@ -1,4 +1,5 @@
-import { StyledComponent } from "styled-components";
+import { DefaultTheme } from "@react-navigation/native";
+import { StyledComponent, DefaultTheme, isStyledComponent } from "styled-components";
 import theme from './theme'
 
 

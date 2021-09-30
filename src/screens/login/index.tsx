@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {useNavigation, useRoute} from '@react-navigation/native';
 import { EvilIcons, AntDesign } from '@expo/vector-icons';
 import { RectButtonProps } from 'react-native-gesture-handler';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { useAuth } from '../../hooks/auth';
 
 import { Text } from 'react-native';
 import {
@@ -33,13 +34,23 @@ Help,
 Copyright
 }  from './styles';
 
+
+
+
+
+
+
 export default class ScreenLogin extends React.Component {
+  
   render() {
+    const { user } = useAuth();
+    console.log(user.name);
+
     return (
      <ViewLogin>
       <SVGLogo/>
       <TitleWelcome>Bem Vindo(a) ao Wehome</TitleWelcome>
-      <ContainerErrorAlert><Text>Email ou senha inválidos.</Text></ContainerErrorAlert>
+      <ContainerErrorAlert><Text>Email do tipo {user.email} é necessário.</Text></ContainerErrorAlert>
       <InputEmail></InputEmail>
       <InputKeyword></InputKeyword>
       <ContainerForgotLogin>

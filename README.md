@@ -10,7 +10,7 @@
 
 ## Sobre
 
-Habitações irregulares causam bilhões em prejuízos para contas públicas, geram problemas urbanísticos e sociais gravíssimos. ( <a href="https://github.com/felipe-pazam/Projeto-trmdfailud/blob/main/docs/propostas-de-solucao.md">Veja as propostas de solução<a> )
+Habitações irregulares causam bilhões em prejuízos para contas públicas, geram problemas urbanísticos e sociais gravíssimos. ( <a href="https://github.com/felipe-andersen/terramade-p/blob/main/propostas-de-solucao.md">Veja as propostas de solução<a> )
   
 Tópicos 
   

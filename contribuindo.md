@@ -10,4 +10,7 @@ Leia sobre a regra de negócio. <a href=""> Clique aqui </a>
 
 Leia sobre versionamento no repositório. <a href=""> Clique aqui </a>
 
+Consulte a lista _todo_.  <a href=""> Clique aqui </a>
+
+
 ## 

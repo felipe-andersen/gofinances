@@ -14,9 +14,9 @@
 
 * democratizar o acesso a projetos arquitetônicos
 
-* redução de riscos em programas de financiamentos imobiliários
+* redução de riscos em programas de financiamento imobiliário
 
-* facillitar aprovação de crédido para financiamentos imobiliário
+* facillitar aprovação de crédido para financiamento imobiliário
 
 ## Benefícios
 

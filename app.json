@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "TerramadeProject",
-    "slug": "TerramadeProject",
-    "schema": "TerramadeProject",
+    "name": "Terramade",
+    "slug": "Terramade",
+    "schema": "Terramade",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ]
   },
-  "name": "TerramadeProject"
+  "name": "Terramade"
 }

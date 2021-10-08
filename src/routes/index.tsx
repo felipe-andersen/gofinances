@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useContext} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -15,7 +15,8 @@ import ProfileViewScreen from '../screens/profileView';
 import LearningScreen from '../screens/learning';
 import CommentsViewScreen from '../screens/commentsView';
 
-import { AuthContext } from '../../utils/AuthContext';
+import { AuthProvider } from '../../src/hooks/auth';
+
 
 
 //Interface declarada como um modulo interno acessado de qualquer lugar
@@ -37,21 +38,19 @@ const BottomTab = createBottomTabNavigator();
 
 
 export default class AppRoutes extends React.Component {
+
   render() {
+   
     return (
       <NavigationContainer>
-        <AuthContext.Provider value={[]}>
+        <AuthProvider>
         <BottomTab.Navigator>
           <BottomTab.Screen name="Visualização dos comentários" component={CommentsViewScreen}/>
           <BottomTab.Screen name="Visualização de perfil" component={ProfileViewScreen}/>
           <BottomTab.Screen name="Feed" component={Feed}/>
           <BottomTab.Screen name="Learning" component={LearningScreen} initialParams={{ itemId: String }}/>
         </BottomTab.Navigator>
-        </AuthContext.Provider>
-
-
-
-
+        </AuthProvider>
       </NavigationContainer>
     )
   }

@@ -30,4 +30,4 @@
 
 * diminui o impacto ambiental
 
-* trás impacto social
+
